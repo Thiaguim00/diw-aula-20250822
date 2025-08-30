@@ -1,129 +1,145 @@
-        * {
-            font-size: 16px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 0rem;
-            margin: 0rem;
-        }
-
-        html {
-            /*border: .2rem solid aqua;*/
-        }
-
-        body {
-            /* border: .2rem solid rgb(5, 245, 5); */
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-
-        header {
-            display: flex;
-            /* border: .2rem solid red; */
-            background-color: rgb(51, 46, 46);
-            padding: .6rem;
-            align-items: center;
-        }
-
-        #logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            /* border: .2rem solid rgb(202, 202, 228); */
-            border-radius: 100%;
-            width: 3rem;
-            height: 3rem;
-            font-size: 2rem;
-            font-weight: bold;
-            margin-right: 1rem;
-            background-color: blue;
-            color: rgb(233, 232, 232);
-        }
-
-        #titulo {
-            font-size: 2rem;
-            font-weight: bold;
-            color: rgb(233, 232, 232);
-        }
-
-        section {
-            display: flex;
-            /* border: .2rem solid purple; */
-            flex: 1;
-        }
-        a {
-            text-decoration: none;
-        }
-
-        nav {
-            /* border: .2rem solid plum; */
-            width: 15rem;
-            background-color: #eee;
-            padding: .6rem;
-        }
-
-        .opção {
-            display: flex;
-            border: .1rem solid green;
-            border-radius: .5rem;
-            padding: .6rem;
-            background-color: #ddd;
-            color: #5e5e5e;
-        }
-        .opcao:hover {
-            background-color: #ccc;
-            color: black;
-            box-shadow: 0rem .3rem .3rem .01rem #ddd;
-
-        }
-        .opcao:hover .icone-final`{
-            opacity: 1;
-        }
-        .icone-inicial {
-            /* border: .1rem solid red; */
-            width: 1.5rem;
-        }
-
-        .rotulo {
-            /* border: .1rem solid blue; */
-            flex: 1;
-
-        }
-
-        .icone-final {
-            border: .1rem solid pink;
-            width: 1.5rem;
-            text-align: right;
-            opacity: 0;
-            transition: opacity .3seg ease;
-
-        }
-
-        main {
-            /* border: .2rem solid orangered; */
-            flex: 1;
-            padding: 1rem;
-        }
-
-        .cartao {
-            border: .2rem solid red;
-            width: 12rem;
-            height: 20rem;
-            padding: .2rem;
-            box-shadow: .5rem .5rem .3rem .01rem;
-
-
-        }
-
-        footer {
-            /* border: .2rem solid yellow; */
-            background-color: rgb(51, 46, 46);
-            padding: .6rem;
-            height: 3rem;
-            color: rgb(233, 232, 232);
-        }
-        @media ( max-width: 576px) {
-            nav {
-                display: none;
-            }
-        }
+* {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0rem;
+    margin: 0rem;
+}
+html {
+    /*border: .2rem solid aqua;*/
+}
+body {
+    /* border: .2rem solid rgb(5, 245, 5); */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    display: flex;
+    /* border: .2rem solid red; */
+    background-color: rgb(51, 46, 46);
+    padding: .6rem;
+    align-items: center;
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* border: .2rem solid rgb(202, 202, 228); */
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    background-color: blue;
+    color: rgb(233, 232, 232);
+}
+#titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(233, 232, 232);
+}
+section {
+    display: flex;
+    /* border: .2rem solid purple; */
+    flex: 1;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    /* border: .2rem solid plum; */
+    width: 20rem;
+    background-color: #eee;
+    padding: .6rem;
+}
+.opção {
+    display: flex;
+    border: .1rem solid green;
+    border-radius: .5rem;
+    padding: .6rem;
+    background-color: #ddd;
+    color: #5e5e5e;
+}
+.opcao:hover {
+    background-color: #ccc;
+    color: black;
+    box-shadow: 0rem .3rem .3rem .01rem #ddd;
+}
+.opcao:hover .icone-final` {
+    opacity: 1;
+}
+.icone-inicial {
+    /* border: .1rem solid red; */
+    width: 1.5rem;
+}
+.rotulo {
+    /* border: .1rem solid blue; */
+    flex: 1;
+}
+.icone-final {
+    border: .1rem solid pink;
+    width: 1.5rem;
+    text-align: right;
+    opacity: 0;
+    transition: opacity .3seg ease;
+}
+main {
+    /* border: .2rem solid orangered; */
+    flex: 1;
+    padding: 1rem;
+}
+.cartao {
+    border: .1rem solid #ddd;
+    width: 13rem;
+    height: 20rem;
+    padding: .5rem;
+    box-shadow: .5rem .5rem .3rem .01rem #eee;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.produto {
+    width: 100%;
+}
+.nome-produto {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.3rem;
+}
+.preco {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;
+    margin-top: 0.5rem;
+    text-align: right;
+}
+.botao {
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: blue;
+    color: #eee;
+    font-weight: bold;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    }
+footer {
+    /* border: .2rem solid yellow; */
+    background-color: rgb(51, 46, 46);
+    padding: .6rem;
+    height: 3rem;
+    color: rgb(233, 232, 232);
+}
+@media (max-width: 576px) {
+    nav {
+        display: none;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+}
